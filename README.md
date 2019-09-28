@@ -216,7 +216,7 @@ npm run start
 > ethereum-finchain-course-api@ start /Users/renato/.ethereum/EthereumFinchainCourseAPI
 > node app.js
 
-Application started. http://renatos-MacBook-Pro-2.local:10010/api/v1/doc
+Application started. http://localhost:10010/api/v1/doc
 
 ```
 
