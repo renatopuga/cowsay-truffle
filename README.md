@@ -1,3 +1,4 @@
+
 # cowsay-truffle: Truffle Suite Foundation hands on
 
 ```bash
@@ -21,6 +22,8 @@ Acabei desistindo da Virtual Machine (VM) e instalei os softwares e dependência
 # Aula 01
 
 Reativando a VM e instalando o Projeto EthereumFinchainCourseToken.
+
+# P1: Ethereum Finchain Course Token
 
 ```bash
 # entrar no home no diretorio .ethereum
@@ -153,4 +156,79 @@ Agora, vamos dar uma olhada na estrutura de arquivos desse projeto, que é bem s
 # se estiver instalado o VisualCode digite:
 code .
 ```
+
+# P2: Ethereum Finchain Course API
+
+```bash
+# volte para o home no dir .etherum
+cd ~/.ethreum
+
+# clonando o projeto
+git clone https://github.com/glauberdm/EthereumFinchainCourseAPI.git
+Cloning into 'EthereumFinchainCourseAPI'...
+remote: Enumerating objects: 83, done.
+remote: Counting objects: 100% (83/83), done.
+remote: Compressing objects: 100% (51/51), done.
+remote: Total 83 (delta 18), reused 83 (delta 18), pack-reused 0
+Unpacking objects: 100% (83/83), done.
+
+# entrando no diretorio clonado
+cd EthereumFinchainCourseAPI/
+
+# instalando (chuva de WARN e ERR)
+npm install
+
+```
+
+```bash
+ ______________________________________ 
+/ Chuva de WARN e ERR, o Glauber disse \
+\ que no IOS é pior! Obrigado!         /
+ -------------------------------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+```bash
+
+# .... rodei de novo e apareceu isso!
+npm install
+
+npm WARN ethereum-finchain-course-api@ No repository field.
+npm WARN ethereum-finchain-course-api@ No license field.
+
+audited 4128 packages in 3.548s
+found 540 vulnerabilities (204 low, 18 moderate, 316 high, 2 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+# fui bem conservador e executei o que foi recomendado
+npm audit fix 
+
+# e depois...
+npm audit fix --force
+
+# vamos rodar (crendeuspai)
+npm run start
+
+> ethereum-finchain-course-api@ start /Users/renato/.ethereum/EthereumFinchainCourseAPI
+> node app.js
+
+Application started. http://renatos-MacBook-Pro-2.local:10010/api/v1/doc
+
+```
+
+```bash
+ _____________ 
+< WoW! Rodou! >
+ ------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
 
