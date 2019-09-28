@@ -14,6 +14,10 @@ FIAP - Truffle Suite Foundation
 by Renato Puga
 ```
 
+# Sobre cowsay-truffle
+
+Acabei desistindo da VM e estou instalando essas estapas (e dependencias anteriores) no OSX 10.14 Majove.
+
 # Aula 01
 
 Reativando a VM e instalando o Projeto EthereumFinchainCourseToken.
