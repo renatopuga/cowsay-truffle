@@ -302,5 +302,71 @@ npm  run dev
 19.09.28 14:07:17 200 GET /js/web3.min.js
 19.09.28 14:07:17 200 GET /js/truffle-contract.js
 19.09.28 14:07:18 200 GET /ColorDecision.json
+````
+
+Agora, abra com o VisualCode o diretório do projeto e edite o arquivo `truffe-config.js` as seguintes linhas:
+
+```bash
+//  compilers: {
+//    solc: {
+//      // version: "/Users/glauber/.nvm/versions/node/v12.10.0/lib/node_modules/solc",   // Any published image name
+//      version: "0.4.20",
+//      docker: true
+//    }
+//  }
+```
+
+Salve a alteração e agora no terminal  onde o projeto esta sendo executado e digite `Ctrl + C` para parar.  Feito isso, execute os comandos abaixo:
+
+```bash
+# executando comando truffle version
+truffle version
+
+Truffle v5.0.36 (core: 5.0.36)
+Solidity - 0.4.25 (solc-js)
+Node v12.4.0
+Web3.js v1.2.1
 
 ```
+
+Agora, vamos compilar o projeto novamente. O erro que vamos gerar é porque ele não esta usando a versão do compilador pela chamado do `solc` que comentamos propositalmente.
+
+```bash
+truffle compile
+
+Compiling your contracts...
+===========================
+> Compiling ./contracts/ColorDecision.sol
+> Compiling ./contracts/Migrations.sol
+
+Error: CompileError: /Users/renato/.ethereum/EthereumFinchainCourseVote/contracts/ColorDecision.sol:3:1: ParserError: Source file requires different compiler version (current compiler is 0.5.8+commit.23d335f2.Emscripten.clang - note that nightly builds are considered to be strictly less than the released version
+pragma solidity ^0.4.18;
+^----------------------^
+,/Users/renato/.ethereum/EthereumFinchainCourseVote/contracts/Migrations.sol:1:1: ParserError: Source file requires different compiler version (current compiler is 0.5.8+commit.23d335f2.Emscripten.clang - note that nightly builds are considered to be strictly less than the released version
+pragma solidity ^0.4.17;
+^----------------------^
+
+Error: Truffle is currently using solc 0.5.8, but one or more of your contracts specify "pragma solidity ^0.4.18".
+Please update your truffle config or pragma statement(s).
+(See https://truffleframework.com/docs/truffle/reference/configuration#compiler-configuration for information on
+configuring Truffle to use a specific solc compiler version.)
+
+Compilation failed. See above.
+    at Object.compile (/usr/local/lib/node_modules/truffle/build/webpack:/packages/workflow-compile/legacy/index.js:72:1)
+Truffle v5.0.36 (core: 5.0.36)
+Node v12.4.0
+
+```
+
+```bash
+ ______________________ 
+< Pau controlado!!     >
+ ---------------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+Volte para o arquivo `truffe-config.js`  retire os comentários das linhas, salve o arquivo e tudo ficará bem.
