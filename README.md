@@ -150,7 +150,7 @@ run `npm audit fix` to fix them, or `npm audit` for details
 Agora, vamos dar uma olhada na estrutura de arquivos desse projeto, que é bem similar a um projeto web. Utilizando um Editor (ex.: VisualCode), vamos dar uma olhada no código.
 
 ```bash
-# se tiver instalado o VisualCode digite:
+# se estiver instalado o VisualCode digite:
 code .
 ```
 
