@@ -1,4 +1,5 @@
 
+
 # cowsay-truffle: Truffle Suite Foundation hands on
 
 ```bash
@@ -232,3 +233,74 @@ Application started. http://localhost:10010/api/v1/doc
 ```
 
 
+# P3: Ethereum Finchain Course Vote
+
+```bash
+# voltando para o home ethereum
+cd ~/.ethereum
+
+# clonando repositorio EthereumFinchainCourseVote
+git clone https://github.com/glauberdm/EthereumFinchainCourseVote.git
+Cloning into 'EthereumFinchainCourseVote'...
+remote: Enumerating objects: 85, done.
+remote: Counting objects: 100% (85/85), done.
+remote: Compressing objects: 100% (50/50), done.
+remote: Total 85 (delta 31), reused 85 (delta 31), pack-reused 0
+Unpacking objects: 100% (85/85), done.
+
+# entrando no repositorio
+cd EthereumFinchainCourseVote/
+
+# instalando com npm
+npm install 
+```
+
+```bash
+ ______________________ 
+< WARN = Segue o Baile >
+ ---------------------- 
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+```bash
+
+# rodando o projeto
+npm  run dev
+
+> ethereum-finchain-course-vote@ dev /Users/renato/.ethereum/EthereumFinchainCourseVote
+> lite-server
+
+** browser-sync config **
+{
+  injectChanges: false,
+  files: [ './**/*.{html,htm,css,js}' ],
+  watchOptions: { ignored: 'node_modules' },
+  server: {
+    baseDir: [ './src', './build/contracts' ],
+    middleware: [ [Function], [Function] ]
+  }
+}
+[Browsersync] Access URLs:
+ -------------------------------------
+       Local: http://localhost:3000
+    External: http://172.16.70.62:3000
+ -------------------------------------
+          UI: http://localhost:3001
+ UI External: http://localhost:3001
+ -------------------------------------
+[Browsersync] Serving files from: ./src
+[Browsersync] Serving files from: ./build/contracts
+[Browsersync] Watching files...
+19.09.28 14:07:17 200 GET /index.html
+19.09.28 14:07:17 200 GET /js/bootstrap.min.js
+19.09.28 14:07:17 200 GET /css/bootstrap.min.css
+19.09.28 14:07:17 200 GET /js/app.js
+19.09.28 14:07:17 200 GET /js/web3.min.js
+19.09.28 14:07:17 200 GET /js/truffle-contract.js
+19.09.28 14:07:18 200 GET /ColorDecision.json
+
+```
