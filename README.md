@@ -1,4 +1,22 @@
-# cowsay-truffle
+# cowsay-truffle: Truffle Suite Foundation hands on
+
+```bash
+FIAP - Truffle Suite Foundation
+
+< Aula: Truffle Suite Foundation -
+< Prof. GLAUBER DUARTE MONTEIRO >
+ -----------------------------
+     \   ^__^
+      \  (oo)\_______
+         (__)\       )\/\
+            ||----w |
+            ||     ||
+by Renato Puga
+```
+
+# Aula 01
+
+Reativando a VM e instalando o Projeto EthereumFinchainCourseToken.
 
 ```bash
 # entrar no home no diretorio .ethereum
