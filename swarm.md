@@ -219,6 +219,29 @@ Your Swarm hash should now be retrievable from other nodes!
 http://localhost:8500/bzz:/0aa7e0debdbb02e5f6f276e43a72aae5989ef2178d14668d403cde113894cec5/
 ```
 
+Bora subir para a rede mundial de computadores:
+
+```bash
+swarm --bzzapi https://swarm-gateways.net up fiap.md
+0f47a35cb82bdba095b64cee23616e6aca9c3e57b15e99580bbd2741406cb5f0
+```
+
+**Agora, copie e cole no browser:**
+
+```bash
+https://swarm-gateways.net/bzz:/0f47a35cb82bdba095b64cee23616e6aca9c3e57b15e99580bbd2741406cb5f0/
+```
+
+```bash
+swarm --bzzapi https://swarm-gateways.net/ --recursive up .
+f1db354cbd55724dd0f5a380c2800922bc5b680341cb142e62ad9d58e67c64f7
+
+cd ..
+
+swarm --bzzapi https://swarm-gateways.net/ --defaultpath src/index.html --recursive up src
+31c4f56863c6024d7131c9055ffe1e788a60724adc9c7466867f7609ced6796f
+
+```
 
 
 
