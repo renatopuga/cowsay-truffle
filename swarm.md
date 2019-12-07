@@ -248,7 +248,7 @@ Agora, no https://app.ens.domains faça:
 1. Crie um subdomain (no caso aqui do cowsay.eth)
 2. Salve o RESOLVER public
 3. Em RECORD [+] adicione um CONTENT
-4. Agora coloco o hash do valor do último swarm com o protocolo bzz:
+4. Agora copie o hash do último comando do swarm e use o protocoo bzz:
 > bzz://31c4f56863c6024d7131c9055ffe1e788a60724adc9c7466867f7609ced6796f
 5. Clique no link ou copie e cole no browser:
 > https://swarm-gateways.net/bzz:/31c4f56863c6024d7131c9055ffe1e788a60724adc9c7466867f7609ced6796f/
