@@ -144,6 +144,30 @@ Agora, copie e cole no browser:
 http://localhost:8500/bzz:/3f37559d19821ad4a3dfbf56fc87e3f5a1cce3cf1f2811d09deb16bed81f1d27/index.html
 ```
 
+![GitHub Logo](fig01.png)
+
+
+Subindo agora por outro caminho:
+
+```bash
+# criando um arquivo meta data (.md)
+echo "FIAP MBA Blockchain" > fiap.md
+
+# swarm up
+swarm up --progress fiap.md
+Swarm Hash: 0aa7e0debdbb02e5f6f276e43a72aae5989ef2178d14668d403cde113894cec5
+Tag UID: 3342789442
+Upload status:
+Syncing 1 chunks       0s [--------------------------------------------------------------] 0 %
+Done! took 7.855914149s
+Your Swarm hash should now be retrievable from other nodes!
+```
+
+**Agora, copie e cole no browser:**
+
+```bash
+http://localhost:8500/bzz:/0aa7e0debdbb02e5f6f276e43a72aae5989ef2178d14668d403cde113894cec5/
+```
 
 
 
