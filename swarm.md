@@ -16,10 +16,60 @@ Checking connectivity... done.
 
 # install web3
 npm i web3
+...
++ web3@1.2.4
+added 849 packages from 555 contributors in 90.726s
+
+
+   ╭────────────────────────────────────────────────────────────────╮
+   │                                                                │
+   │       New minor version of npm available! 6.9.0 → 6.13.2       │
+   │   Changelog: https://github.com/npm/cli/releases/tag/v6.13.2   │
+   │               Run npm install -g npm to update!                │
+   │                                                                │
+   ╰────────────────────────────────────────────────────────────────╯
+
 
 # install 
+npm i ethereum-ens
+
+> keccak@2.1.0 install /home/ethereum-fiap/EthereumFinchainCourseVote/node_modules/ethereumjs-abi/node_modules/keccak
+> npm run rebuild || echo "Keccak bindings compilation fail. Pure JS implementation will be used."
+
+
+> keccak@2.1.0 rebuild /home/ethereum-fiap/EthereumFinchainCourseVote/node_modules/ethereumjs-abi/node_modules/keccak
+> node-gyp rebuild
+
+make: Entering directory '/home/ethereum-fiap/EthereumFinchainCourseVote/node_modules/ethereumjs-abi/node_modules/keccak/build'
+  CXX(target) Release/obj.target/keccak/src/addon.o
+  CC(target) Release/obj.target/keccak/src/libkeccak-64/KeccakSpongeWidth1600.o
+  CC(target) Release/obj.target/keccak/src/libkeccak-64/KeccakP-1600-opt64.o
+  SOLINK_MODULE(target) Release/obj.target/keccak.node
+  COPY Release/keccak.node
+make: Leaving directory '/home/ethereum-fiap/EthereumFinchainCourseVote/node_modules/ethereumjs-abi/node_modules/keccak/build'
+npm WARN ethereum-finchain-course-vote@ No repository field.
+npm WARN ethereum-finchain-course-vote@ No license field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
++ ethereum-ens@0.7.8
+added 3 packages from 8 contributors and moved 4 packages in 14.005s
+
+# executando node
+node src/js/ens.js 
+cowsay.eth 0xCd1f55318De39Bd2e8D32A7A949CA4Bb7c865c88
+```
+
+Após algumas alteraçes no `ens.js` (pdf da aula) rode:
+
+```bash
+node src/js/ens.js 
+
+cowsay.eth 0xCd1f55318De39Bd2e8D32A7A949CA4Bb7c865c88
+Endereço cowsay.eth
 
 ```
+
 
 ## swarm 
 
