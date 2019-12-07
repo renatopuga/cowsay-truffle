@@ -243,5 +243,6 @@ swarm --bzzapi https://swarm-gateways.net/ --defaultpath src/index.html --recurs
 
 ```
 
+Agora, crie um subdomain em https://app.ens.domains e...
 
 
