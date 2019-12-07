@@ -1,5 +1,8 @@
 # Aula 05
 
+A parte do https://app.ens.domains está no PDF da aula.
+Dito isso....
+
 ## EthereumFinchainCourseVote
 
 ```bash
