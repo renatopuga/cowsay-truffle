@@ -1,4 +1,27 @@
-# swarm 
+# Aula 05
+
+## EthereumFinchainCourseVote
+
+```bash
+git clone https://github.com/glauberdm/EthereumFinchainCourseVote.git
+
+Cloning into 'EthereumFinchainCourseVote'...
+remote: Enumerating objects: 101, done.
+remote: Counting objects: 100% (101/101), done.
+remote: Compressing objects: 100% (60/60), done.
+remote: Total 101 (delta 42), reused 96 (delta 37), pack-reused 0
+Receiving objects: 100% (101/101), 475.16 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (42/42), done.
+Checking connectivity... done.
+
+# install web3
+npm i web3
+
+# install 
+
+```
+
+## swarm 
 
 ## Censorship resistant storage and communication infrastructure for a sovereign digital society.
 
@@ -84,5 +107,44 @@ Welcome to the Geth JavaScript console!
                 ||     ||
 
 ```
+
+Abra outro terminal e digite:
+
+```bash
+# voltar para home
+cd
+
+# entrar no projeto Vote
+cd EthereumFinchainCourseVote/
+
+# entar no dir src
+cd src/
+
+# listar
+ls
+ColorDecision.json  css  fonts  index.html  js
+
+# tar
+tar cf vote.tar .
+tar: ./vote.tar: file is the archive; not dumped
+
+# listar
+ls
+ColorDecision.json  css  fonts  index.html  js  vote.tar
+
+# rode o curl
+curl -X POST -H "Content-Type: application/x-tar" --data-binary @vote.tar http://localhost:8500/bzz:/
+
+3f37559d19821ad4a3dfbf56fc87e3f5a1cce3cf1f2811d09deb16bed81f1d27
+```
+
+Agora, copie e cole no browser:
+
+```bash
+http://localhost:8500/bzz:/3f37559d19821ad4a3dfbf56fc87e3f5a1cce3cf1f2811d09deb16bed81f1d27/index.html
+```
+
+
+
 
 
